@@ -31,7 +31,7 @@ elif menu == 2:
 
     print("O numero convertido é {}{}{}{}{}".format(divisao4, resto4,resto3, resto2,resto1))
 
-else:
+elif menu==3 :
     divisao1 = numero // 8
     resto1 = numero % 8
     divisao2 = divisao1 // 8
@@ -42,4 +42,7 @@ else:
     resto4 = divisao3 % 8
 
     print("O numero convertido é {}{}{}{}{}".format(divisao4, resto4,resto3, resto2,resto1))
+
+else:
+    print("Digite uma opção valida")
 
