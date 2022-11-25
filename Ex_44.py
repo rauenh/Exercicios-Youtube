@@ -27,8 +27,10 @@ elif menu ==3:
     print("Você irá pagar duas parcelas de {:.2f}. Não há desconto nessa modalidade".format(parcelas))
 
 elif menu ==4:
+    quantidade= int(input("Quantas parcelas?"))
     juros = (20*preco)/100
     valor = preco + juros
-    print("Você irá pagar no total {:.2f} pelo produto. Teve um acrescimo de {:.2f} reais.".format(valor,juros))
+    parcelas = preco/quantidade
+    print("Você irá pagar no total {:.2f} pelo produto. Será {} parcelas de {:.2f} reais cada. Teve um acrescimo de {:.2f} reais no valor final do produto.".format(valor,quantidade, parcelas,juros))
 else:
     print("Digite uma opção válida")
