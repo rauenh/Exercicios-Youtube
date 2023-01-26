@@ -2,12 +2,12 @@
 
 a1 = int(input("Digite aqui o primeiro termo da PA:\n"))
 r = int(input("Digite aqui a razão da PA:\n"))
-n = int(input("Digite aqui a posição do termo que queremos descobrir:\n"))
-c = 0
+n = a1
+c = 1
 
-while c != n:
-    an = a1 + (n-1)*r
-    print(an)
+while c <= 10:
+    print('{} -> '.format(n), end='')
+    n = n + r
     c +=1
+print("FIM.Esses são os 10 termos da PA.")
 
-print("O {}º termo da PA de razão {} e de primeiro termo {} vale: {}".format(n, r, a1, an))
