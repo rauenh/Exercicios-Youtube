@@ -6,14 +6,14 @@ menu = 'S'
 while menu != 'N':
     numeros = int(input("Digite aqui um número:"))
     soma += numeros
-    menu = str(input("Você quer digitar mais valores? [S/N]")).upper()
-    if numeros > maior:
-        maior = numeros
-    elif maior > numeros:
-        menor = numeros
-    elif menor < numeros:
-        menor = numeros
     c += 1
+    if c == 1:
+        maior = menor = numeros
+    elif numeros > maior:
+        maior = numeros
+    elif numeros < menor:
+        menor = numeros
+    menu = str(input("Você quer digitar mais valores? [S/N]")).upper()
 if menu == 'N':
     media = soma/c
 print("Foram digitados {} números. O maior número foi {}, o menor número foi {} e a média entre todos os números digitados é de {}".format(c,maior,menor,media))
