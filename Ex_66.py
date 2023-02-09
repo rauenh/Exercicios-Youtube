@@ -5,9 +5,9 @@ inteiro = int(input("Digite aqui um número inteiro positivo: "))
 cont = soma = 0
 
 while True:
-    soma += inteiro
-    cont += 1
     inteiro = int(input("Digite aqui um número inteiro positivo: "))
     if inteiro == 999:
         break
+    soma += inteiro
+    cont += 1
 print(f'Foram digitados {cont} números. A soma entre eles é de {soma}')

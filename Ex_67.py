@@ -3,16 +3,17 @@
 print("="*60)
 print(f"{' *** TABUADA ***' : ^60}")
 print("="*60)
-numero = int(input("Qual o número que você deseja saber a tabuada? Digite a seguir: "))
 cont = 0
-while numero > 0:
+while True:
+    numero = int(input("Qual o número que você deseja saber a tabuada? Digite a seguir: "))
+    print('*'*20)
+    if numero < 0:
+        break
     for c in range(1, 11):
         tabuada = numero * c
         print("{} * {} = {} ".format(c, numero, tabuada))
         cont += 1
-    numero = int(input("Qual o número que você deseja saber a tabuada? Digite a seguir: "))
-    if numero < 0:
-        break
+    print('*' * 20)
 print("="*60)
 print(f"{' *** TABUADA FINALIZADA COM SUCESSO ***' : ^60}")
 print("="*60)

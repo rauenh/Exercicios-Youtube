@@ -10,7 +10,9 @@ ganhou = 0
 while True:
     print("Computador: PAR ou ÍMPAR?")
     sleep(1)
-    escolha = str(input("Usuário: ")).upper()
+    escolha = ' '
+    while escolha not in 'PpIi':
+        escolha = str(input("Usuário: ")).upper().strip()[0]
     print("Computador: Agora escolha um número de 0 a 10...")
     sleep(1)
     numero_usuario = int(input("Usuário: "))
@@ -20,7 +22,7 @@ while True:
     soma = numero_comp + numero_usuario
 
     if soma % 2 == 0:
-        if escolha == 'PAR':
+        if escolha == 'P':
             ganhou += 1
             print("Usuário venceu!!! Vamos jogar novamente.")
             print("~" * 30)
@@ -28,7 +30,7 @@ while True:
         else:
             break
     else:
-        if escolha == 'IMPAR':
+        if escolha == 'I':
             ganhou += 1
             print("Usuário venceu!!! Vamos jogar novamente.")
             print("~" * 30)
