@@ -14,11 +14,10 @@ print(produto)
     #print("\n", mercadinho[cont], end='')
 
 c=0
-
 print(f"{ 'Produto' :^20} | { 'Preço' :^20} ")
 while c < len(produto):
 #for c in range(0,len(produto)):
-    print(f"{produto[c] :^20} | {preco[c] :^20} ")
+    print(f"{produto[c] :.<20} R${preco[c] :>10} ")
     c += 1
 
 
