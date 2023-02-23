@@ -17,7 +17,7 @@ c=0
 print(f"{ 'Produto' :^20} | { 'Preço' :^20} ")
 while c < len(produto):
 #for c in range(0,len(produto)):
-    print(f"{produto[c] :.<20} R${preco[c] :>10} ")
+    print(f"{produto[c] :.<20} R${preco[c] :>10} ")#<alinhamento a esquerda > alinhamento a direita ^alinhamento no centro
     c += 1
 
 
