@@ -35,3 +35,6 @@ print(c.index(5, 1)) #o numero depois da virgula fala a posição a qual é para
 #Você pode ter dados de tipos diferentes dentro de uma tupla no python
 #Você pode apenas apagar a tupla inteira com o comando del(tupla)
 
+palavras = ('azeite', 'macarrao', 'cadeira', 'colcha', 'pedra', 'madeira', 'mar', 'nuvens', 'aves', 'animais', 'borboleta', 'macaco', 'ovos')
+for n in range(0,len(palavras)):
+    print(palavras[n:]) #aqui ele dá slice em cada termo da tupla
