@@ -4,3 +4,4 @@
 lista = [int(input("Digite um número: ")), int(input("Digite um número: ")), int(input("Digite um número: ")), int(input("Digite um número: ")), int(input("Digite um número: "))]
 print(lista)
 print(f'O maior número da lista é {max(lista)} na posição {lista.index(max(lista))} e o menor número é {min(lista)} na posição {lista.index(min(lista))}')
+
