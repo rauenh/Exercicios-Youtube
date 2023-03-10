@@ -11,7 +11,7 @@ while True:
         menu = str(input("Você deseja adicionar mais números? [S/N]: ")).upper().strip()
     if menu == 'N':
         break
-for elementos in lista:
+for elementos in lista: #uma outra forma de fazer é usando um for i, v in enumerate(lista): if v%2 ==0, pares.append(v) elif v%2 == 1: impares.append(v)
     if elementos%2 == 0:
         lista_par.append(elementos)
     if elementos%2 != 0:
