@@ -2,7 +2,6 @@
 # Caso o número já exista lá dentro, ele não será adicionado. No final, serão exibidos todos os valores únicos digitados, em ordem crescente.
 
 lista = []
-
 while True:
     menu = ' '
     valores_numericos = int(input("Digite um valor numérico: "))
