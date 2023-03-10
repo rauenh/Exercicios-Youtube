@@ -12,10 +12,7 @@ while c < 5:
             lista_desordenada.insert(posicao, valores_numericos)
             lista_desordenada.pop()
             break
-
-
-    # print(lista_desordenada.index(elementos)) #se ele encontra um elemento repetido ele printa a posição da primeira ocorrencia do elemento
-
+# print(lista_desordenada.index(elementos)) #se ele encontra um elemento repetido ele printa a posição da primeira ocorrencia do elemento
 print(lista_desordenada)
 
 
